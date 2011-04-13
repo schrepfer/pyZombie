@@ -1,0 +1,15 @@
+#!/bin/sh
+# lowercase any filenames with uppercase chars
+for file in $*
+do
+if [ -f $file ]
+then
+  lcfile=`echo $file | tr [:upper:] [:lower:]`
+  if [ $file != $lcfile ]
+  then
+    mv $file $lcfile
+  fi     
+fi
+done
+
+

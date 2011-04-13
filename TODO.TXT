@@ -1,0 +1,19 @@
+-------------
+Possible:
+-------------
+Display guild info: add "<-info" button underneath add/remove buttons
+
+-------------
+Need help:
+-------------
+Extend skill/spell costs to > 100 correctly, need help of 1+1 wished player
+
+-------------
+Future considerations:
+-------------
+Need to give OK button in Info Dialogs the default focus or atleast
+find a way to have the info box easily and quickly closed
+
+Also, need "right-clicked" posibility, seems better than "row-activated", i.e.
+double-click for skill/spell/race/guild info.
+specially since double-click is already taken for guild addition/remove
