@@ -1651,7 +1651,12 @@ class Base:
       self.filedrop = filesel.get_filename()
 
    def main(self):
-      gtk.main()
+      old_cwd = os.getcwd()
+      try:
+        os.chdir(os.path.dirname(sys.argv[0]))
+        gtk.main()
+      finally:
+        os.chdir(old_cwd)
 
 
 if __name__ == "__main__":
