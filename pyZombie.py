@@ -6,6 +6,8 @@ import gtk
 import gtk.gdk
 import gobject
 import datastore
+import os
+import sys
 
 (
    COLUMN_NAME,
@@ -1179,6 +1181,7 @@ class skillspells(gtk.ScrolledWindow):
       elif event.get_state() & gtk.gdk.BUTTON2_MASK:
         (store, iter) = w.get_selection().get_selected()
         store.set_value(iter, 2, store.get_value(iter, 1))
+        self.recalcFunc()
       return False
 
 
